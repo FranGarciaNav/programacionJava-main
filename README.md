@@ -1,4 +1,4 @@
-# Bienvenido al curso de Programación en ![Java Logo](https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/50px-Java_programming_language_logo.svg.png) y ![MAUI Logo](https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/.NET_logo.svg/50px-.NET_logo.svg.png)
+# Bienvenido al curso de Programación en ![Java Logo](https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/50px-Java_programming_language_logo.svg.png) y ![MAUI Logo](https://devblogs.microsoft.com/dotnet/wp-content/uploads/sites/10/2021/10/shadow.png)
 
 ¡Hola! Este es el repositorio dedicado a enseñarte programación en Java y .NET MAUI. Si eres un principiante en la programación, deseas aprender nuevos lenguajes y frameworks, o simplemente quieres refrescar y mantenerte actualizado, has llegado al lugar correcto.
 
