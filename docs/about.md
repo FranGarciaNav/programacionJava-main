@@ -1,6 +1,6 @@
 # About us ❤️‍🔥
 
-Somos **Francisco García García** y **Fran Saez**, Desarrolladores Multiplataforma apasionados por la enseñanza y la tecnología.
+Somos **Francisco García García** y **Fran Sáez**, Desarrolladores Multiplataforma apasionados por la enseñanza y la tecnología.
 
 ## Nuestra Misión
 
