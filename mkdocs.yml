@@ -1,0 +1,107 @@
+site_name: Programación
+nav:
+    - 🔥 Inicio: index.md
+    - 💾 Elementos de un programa informático: 
+      - 💾 Programa y lenguajes de programación: ud1/1elementos.md
+      - 💾 El lenguaje Java:
+        - Conceptos básicos del lenguaje: ud1/121conceptosbasicos.md
+        - Setup: ud1/122setup.md
+        - Proyecto Hola Mundo: ud1/123holamundo.md
+      - 💾 Variables, sentencias y paquetes:
+        - Variables: ud1/131variables.md
+        - Sentencias y paquetes: ud1/132sentencias.md
+      - 💾 Tipos de datos: 
+        - Datos primitivos: ud1/14datatypejava.md
+        - Datos no primitivos: ud1/142noprimitive.md
+        - String: ud1/143string.md
+      - 💾 Operadores y expresiones: ud1/15operators.md
+      - 💾 Comentarios en Java: ud1/16comments.md
+      - 💾 Constantes y literales: ud1/17constantesliterales.md
+      - 💾 Entrada y salida de información por consola: ud1/18inputoutputconsole.md
+      - 💾 Introducción a la programación orientada a objetos: ud1/19poo.md
+    - 🖲️ Estructuras básicas de control:
+      - 🖲️ Estructuras de selección: 
+        - If Statement: ud2/1seleccion.md
+        - Expresiones booleanas: ud2/11booleanexpressions.md
+        - Switch Statement: ud2/2switch.md
+      - 🖲️ Estructuras de repetición:
+        - Bucle while: ud2/22while.md
+        - Bucle do while: ud2/22dowhile.md
+        - Bucles while con if: ud2/22whileif.md
+        - Bucle for: ud2/22for.md
+        - Bucles anidados: ud2/22nestedloop.md
+        - Principios del diseño de bucles: ud2/22principlesloop.md
+      - 🖲️ Estructuras de salto:
+        - Sentencias break y continue: ud2/23breakcontinue.md
+      - 🖲️ Control de excepciones: ud2/24exceptions.md
+      - 🖲️ Prueba y depuración de aplicaciones: ud2/25fallos.md
+      - 🖲️ Introducción a los métodos en Java: ud2/26methods.md 
+    - ♾️ Recursividad: ud3/6recursion.md
+    - 🌎 Programación orientada a objetos POO:
+      - 🌎 Clases en Java: ud3/1metodoclase.md
+      - 🌎 Constructores y destructores: ud3/2constructor.md
+      - 🌎 Métodos y sobrecarga de métodos: ud3/3sobrecargametodos.md
+      - 🌎 Paso de parámetros por valor y referencia: ud3/4referencevalue.md
+      - 🌎 Variables, métodos y clases estáticas: ud3/5static.md
+      - 🌎 Null value: ud3/7nullvalue.md
+      - 🌎 POJO, Record: ud3/8pojo.md
+    - 📅 Arrays:
+      - 📅 Introducción: ud4/1arrays.md
+      - 📅 Algoritmos útiles en arrays: ud4/2usefularrays.md
+      - 📅 Tipos de referencia y tipos de valor: ud4/3referencetypearrays.md
+      - 📅 Array de objetos: ud4/4arrayobjects.md
+      - 📅 Algoritmos de ordenación: ud4/5sortarrays.md
+      - 📅 Algoritmos de búsqueda: ud4/6searcharrays.md
+      - 📅 Arrays multidimensionales: ud4/7twodimensionarray.md
+    - 📱 .NET MAUI:
+      - 📱 Introducción a MAUI: ud6/1introduccion-maui.md
+      - 📱 APIs Nativas: ud6/2apis-nativas.md
+      - 📱 Layouts y Controles: ud7/1layouts-controles.md
+      - 📱 Navegación y Binding: ud8/1navegacion-binding.md
+      - 📱 Publicación de Apps: ud7/2publicacion-apps.md
+
+    - 🔣 Atajos de teclado para IntelliJ: shortcuts.md
+    - ❤️‍🔥 About me : about.md
+theme:
+  name: material
+  language: es
+  custom_dir: overrides
+  #logo: assets/logo.png
+  
+  palette:
+    - scheme: default
+      primary: teal
+      accent: "Teal"
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Cambiar a modo noche
+    - scheme: slate
+      primary: teal
+      accent: "Teal"
+      toggle:
+        icon: material/toggle-switch
+        name: Cambiar a modo día
+  
+  extra:
+    #generator: false
+  
+  copyright: Copyright &copy; 2021 - Patricia Martí
+  
+  features:
+    - content.code.annotate
+    - navitagion.tabs
+    #- navigation.sections
+    - navigation.top
+
+markdown_extensions:
+  - admonition
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+
+extra:  
+  analytics:
+    provider: google
+    property: G-FTWMZYNBPC
