@@ -5,6 +5,10 @@ plugins:
 
 nav:
     - 🔥 Inicio: index.md
+    - 🚀 Intérprete Java Online: 
+      - Básico: java-online-interpreter.md
+      - Avanzado: java-interpreter-advanced.md
+      - Guía Completa: java-interpreter-guide.md
     - 📊 Variables, Diagramas de Flujo y UML: ud0/2diagramas-uml-flujo-variables.md
     - 📖 Leer y Entender Código: ud0/1leer-entender-java.md
     - 💾 Elementos de un programa informático: 
