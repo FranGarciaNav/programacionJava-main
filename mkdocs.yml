@@ -115,10 +115,6 @@ markdown_extensions:
   - pymdownx.arithmatex:
       generic: true
   - pymdownx.smartsymbols
-  - pymdownx.superfences:
-      custom_fences:
-        - name: mermaid
-          class: mermaid
 
 extra:  
   analytics:
