@@ -2,7 +2,6 @@ site_name: Programación
 
 plugins:
   - search
-  - mermaid2
 
 nav:
     - 🔥 Inicio: index.md
