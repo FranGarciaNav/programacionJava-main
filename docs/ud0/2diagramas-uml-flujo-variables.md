@@ -310,6 +310,8 @@ Un diagrama de flujo es una **representación gráfica** de un algoritmo o proce
 
 ### 🔐 Ejemplo: Algoritmo de login
 
+![Diagrama de flujo - Algoritmo de login](../img/flujo.jpg)
+
 ```mermaid
 flowchart TD
     A[Inicio] --> B[Ingresar email y contraseña]
@@ -391,6 +393,8 @@ UML es un **lenguaje de modelado visual estándar** que se utiliza para especifi
 ### 🏛️ 1. Diagrama de Clases
 
 Representa la **estructura estática** del sistema, mostrando las clases, sus atributos, métodos y las relaciones entre ellas.
+
+![Diagrama UML de Clases - Sistema E-commerce](../img/uml-class-diagram.png)
 
 ```mermaid
 classDiagram
