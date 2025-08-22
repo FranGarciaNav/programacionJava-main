@@ -432,42 +432,21 @@ class Estudiante {
                 let output = "✅ Compilación exitosa\n";
                 output += "🚀 Ejecutando programa...\n\n";
                 
-                // Procesar System.out.println de manera más inteligente
-                const lines = code.split('\n');
-                let inMainMethod = false;
-                let braceCount = 0;
-                
-                for (let line of lines) {
-                    line = line.trim();
-                    
-                    // Detectar inicio del método main
-                    if (line.includes('public static void main')) {
-                        inMainMethod = true;
-                        continue;
-                    }
-                    
-                    // Contar llaves para detectar fin del método main
-                    if (inMainMethod) {
-                        braceCount += (line.match(/\{/g) || []).length;
-                        braceCount -= (line.match(/\}/g) || []).length;
-                        
-                        if (braceCount <= 0) {
-                            inMainMethod = false;
-                        }
-                    }
-                    
-                    // Procesar System.out.println dentro del método main
-                    if (inMainMethod && line.includes('System.out.println')) {
-                        const match = line.match(/System\.out\.println\(([^)]+)\)/);
-                        if (match) {
-                            let content = match[1];
-                            
-                            // Procesar concatenaciones y variables
-                            content = processPrintContent(content, code);
-                            output += content + '\n';
-                        }
-                    }
-                }
+                                 // Extraer System.out.println del código
+                 const printStatements = code.match(/System\.out\.println\([^)]+\)/g);
+                 if (printStatements) {
+                     printStatements.forEach(stmt => {
+                         // Simular la salida
+                         const content = stmt.match(/System\.out\.println\(([^)]+)\)/);
+                         if (content) {
+                             let outputText = content[1];
+                             
+                             // Procesar concatenaciones y variables de manera más inteligente
+                             outputText = processPrintContent(outputText, code);
+                             output += outputText + '\n';
+                         }
+                     });
+                 }
                 
                 if (output === "✅ Compilación exitosa\n🚀 Ejecutando programa...\n\n") {
                     output += "Programa ejecutado sin salida visible.\n";
@@ -497,18 +476,18 @@ class Estudiante {
                 if (variable !== 'System' && variable !== 'out' && variable !== 'println') {
                     // Simular valores de variables
                     const randomValues = {
-                        'nombre': 'Juan',
-                        'edad': '25',
+                        'nombre': 'Estudiante',
+                        'edad': '20',
                         'altura': '1.75',
                         'numero': '42',
                         'mensaje': 'El número es:',
-                        'a': '10',
-                        'b': '5',
-                        'suma': '15',
-                        'resta': '5',
-                        'multiplicacion': '50',
+                        'a': '15',
+                        'b': '7',
+                        'suma': '22',
+                        'resta': '8',
+                        'multiplicacion': '105',
                         'division': '2',
-                        'modulo': '0',
+                        'modulo': '1',
                         'esEstudiante': 'true',
                         'i': '1',
                         'intento': '50',
@@ -516,7 +495,7 @@ class Estudiante {
                         'maxIntentos': '10',
                         'numeroSecreto': '41',
                         'intentosSimulados': '[50, 25, 75, 37, 43, 40, 42, 41]',
-                        'numeros': '[15, 7, 23, 9, 31, 4, 18, 12, 25, 6]',
+                        'numeros': '[10, 20, 30, 40, 50]',
                         'maximo': '31',
                         'minimo': '4',
                         'promedio': '15.00',
