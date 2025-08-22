@@ -1,4 +1,9 @@
 site_name: Programación
+
+plugins:
+  - search
+  - mermaid2
+
 nav:
     - 🔥 Inicio: index.md
     - 📊 Variables, Diagramas de Flujo y UML: ud0/2diagramas-uml-flujo-variables.md
@@ -106,6 +111,14 @@ markdown_extensions:
   - pymdownx.highlight
   - pymdownx.superfences
   - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
 
 extra:  
   analytics:

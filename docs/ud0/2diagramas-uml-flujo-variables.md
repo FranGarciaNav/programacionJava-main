@@ -29,7 +29,7 @@ graph LR
 ### 🔄 **Ciclo de vida de una variable**
 
 ```mermaid
-flowchart TD
+graph TD
     A[Declaración] --> B[Inicialización]
     B --> C[Uso/Modificación]
     C --> D[¿Sigue siendo necesaria?]
