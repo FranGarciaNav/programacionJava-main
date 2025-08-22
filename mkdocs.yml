@@ -54,6 +54,8 @@ nav:
       - 📅 Algoritmos de ordenación: ud4/5sortarrays.md
       - 📅 Algoritmos de búsqueda: ud4/6searcharrays.md
       - 📅 Arrays multidimensionales: ud4/7twodimensionarray.md
+    - 🗄️ Bases de Datos:
+      - 🗄️ SQL y NoSQL: ud5/1bases-datos-sql-nosql.md
     - 📱 .NET MAUI:
       - 📱 Introducción a MAUI: ud6/1introduccion-maui.md
       - 📱 APIs Nativas: ud6/2apis-nativas.md
