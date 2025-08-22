@@ -313,7 +313,7 @@ Un diagrama de flujo es una **representación gráfica** de un algoritmo o proce
 ![Diagrama de flujo - Algoritmo de login](../img/flujo.jpg)
 
 ```mermaid
-flowchart TD
+graph TD
     A[Inicio] --> B[Ingresar email y contraseña]
     B --> C{¿Email válido?}
     C -->|No| D[Mostrar error: Email inválido]
@@ -328,7 +328,7 @@ flowchart TD
 ### 🔍 Ejemplo: Algoritmo de búsqueda
 
 ```mermaid
-flowchart TD
+graph TD
     A[Inicio] --> B[Ingresar término de búsqueda]
     B --> C{¿Término vacío?}
     C -->|Sí| D[Mostrar mensaje: Ingrese un término]
@@ -344,7 +344,7 @@ flowchart TD
 ### 📊 Ejemplo: Cálculo de promedio
 
 ```mermaid
-flowchart TD
+graph TD
     A[Inicio] --> B[Leer número de calificaciones]
     B --> C[Inicializar suma = 0, contador = 0]
     C --> D{¿Contador < número de calificaciones?}
@@ -501,7 +501,7 @@ graph TD
 Representa el **flujo de trabajo** y los procesos de negocio.
 
 ```mermaid
-flowchart TD
+graph TD
     A[Inicio] --> B[Recibir pedido]
     B --> C{¿Stock disponible?}
     C -->|No| D[Rechazar pedido]
@@ -520,7 +520,7 @@ flowchart TD
 Muestra los **estados de un objeto** y las transiciones entre ellos.
 
 ```mermaid
-stateDiagram-v2
+stateDiagram
     [*] --> Pendiente
     Pendiente --> EnProceso : Iniciar trabajo
     EnProceso --> Revisión : Completar
