@@ -254,9 +254,9 @@ document.addEventListener('DOMContentLoaded', function() {
                         const content = stmt.match(/System\.out\.println\(([^)]+)\)/);
                         if (content) {
                             let outputText = content[1];
-                            // Procesar concatenaciones básicas
-                            outputText = outputText.replace(/"/g, '');
-                            outputText = outputText.replace(/\+/g, ' ');
+                            
+                            // Procesar concatenaciones y variables de manera más inteligente
+                            outputText = processPrintContent(outputText, code);
                             output += outputText + '\n';
                         }
                     });
@@ -274,6 +274,64 @@ document.addEventListener('DOMContentLoaded', function() {
                 outputDiv.innerHTML = "❌ Error de ejecución: " + error.message;
             }
         }, 1000);
+    }
+
+    // Función para procesar contenido de System.out.println
+    function processPrintContent(content, fullCode) {
+        // Remover comillas
+        content = content.replace(/"/g, '');
+        
+        // Procesar concatenaciones básicas
+        content = content.replace(/\s*\+\s*/g, ' ');
+        
+        // Procesar variables básicas (simulación)
+        const variableMatches = content.match(/\b\w+\b/g);
+        if (variableMatches) {
+            variableMatches.forEach(variable => {
+                if (variable !== 'System' && variable !== 'out' && variable !== 'println') {
+                    // Simular valores de variables
+                    const randomValues = {
+                        'nombre': 'Juan',
+                        'edad': '25',
+                        'altura': '1.75',
+                        'numero': '42',
+                        'mensaje': 'El número es:',
+                        'a': '10',
+                        'b': '5',
+                        'suma': '15',
+                        'resta': '5',
+                        'multiplicacion': '50',
+                        'division': '2',
+                        'modulo': '0',
+                        'esEstudiante': 'true',
+                        'i': '1',
+                        'intento': '50',
+                        'intentos': '1',
+                        'maxIntentos': '10',
+                        'numeroSecreto': '41',
+                        'intentosSimulados': '[50, 25, 75, 37, 43, 40, 42, 41]',
+                        'numeros': '[15, 7, 23, 9, 31, 4, 18, 12, 25, 6]',
+                        'maximo': '31',
+                        'minimo': '4',
+                        'suma': '150',
+                        'promedio': '15.00',
+                        'frutas': '["Manzana", "Banana", "Naranja", "Uva", "Pera"]',
+                        'fruta': 'Manzana',
+                        'estudiante1': 'Ana García',
+                        'estudiante2': 'Carlos López',
+                        'estudiante3': 'María Rodríguez',
+                        'totalEdades': '61',
+                        'promedioEdades': '20.3'
+                    };
+                    
+                    if (randomValues[variable]) {
+                        content = content.replace(new RegExp('\\b' + variable + '\\b', 'g'), randomValues[variable]);
+                    }
+                }
+            });
+        }
+        
+        return content;
     }
 
     // Función para limpiar
