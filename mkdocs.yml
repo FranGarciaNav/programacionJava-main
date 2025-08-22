@@ -2,6 +2,7 @@ site_name: Programación
 nav:
     - 🔥 Inicio: index.md
     - 📖 Leer y Entender Código: ud0/1leer-entender-java.md
+    - 📊 Diagramas UML, de Flujo y Variables: ud0/2diagramas-uml-flujo-variables.md
     - 💾 Elementos de un programa informático: 
       - 💾 Programa y lenguajes de programación: ud1/1elementos.md
       - 💾 El lenguaje Java:
